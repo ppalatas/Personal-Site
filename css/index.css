@@ -33,16 +33,29 @@ ul, li
 	outline-style: 2px solid black;
 }
 
+#webDeveloper
+{
+	height: 160px;
+	width: 600px;
+	font-family: 'Blacksword';
+	background-color: #FBFFFE;
+	font-size: 4em;
+	margin-left: 325px;
+	margin-top: 10px;
+	position: relative;
+	opacity: .8;
+	text-align: center;
+
+}
+
 @font-face {
-    font-family: Blacksword;
-    src: url(Blacksword.otf);
+    font-family: 'Blacksword'; src: url(Blacksword.otf);
 }
 
 .headPicture
 {
-	background-color: #FBFFFE;
+
 	background-image: url('/img/developer.jpg');
-	font-family: Blacksword;
 }
 
 
