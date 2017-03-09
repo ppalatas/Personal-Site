@@ -9,9 +9,9 @@
 
     var round = 0;
 
-    var audio = new Audio('../audio/GameOver.mp3');
+    var audio = new Audio('audio/GameOver.mp3');
 
-    var audioOot = new Audio('../audio/NextRound.wav');
+    var audioOot = new Audio('audio/NextRound.wav');
 
     var squares = ["topButton", "rightButton", "downButton", "leftButton"]; 
 
