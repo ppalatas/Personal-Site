@@ -19,8 +19,6 @@ ul, li
 	font-size: 1em;
 	font-family: 'Raleway', sans-serif;
 	margin: 0;
-
-	/*font-family: 'Montserrat', sans-serif;*/
 }
 
 .container
@@ -54,24 +52,81 @@ ul, li
 
 .headPicture
 {
+	background-image: url('../img/developer.jpg');
 
-	background-image: url('/img/developer.jpg');
 }
 
 
 .scrollContainer
 {
 	height: 350px;
-	width: 255px;
+	width: 1150px;
 	background-color: #FBFFFE;
 	float: left;
-	margin-left: 40px;
+	margin-left: 27px;
 	margin-top: 25px;
 	opacity: .98;
 	border-radius: 3px;
 	border-color: #FAA916;
 }
 
+#contentBox
+{
+	margin: 0px auto; 
+	width:100%;
+}
+
+#column1
+{
+	float:left;
+	margin-top: 100px;
+	margin-left: 31px;
+/*	border: 2px solid black;*/
+	width:30%;
+	height: 70%;
+	border-radius: 5px;
+	text-align: center;
+	background-color: #BCB9BD;
+	color: #FBFFFE;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 22px;
+	font-family: 'Raleway', sans-serif;
+}
+
+#column2
+{
+	float:left;
+	margin-top: 100px;
+	margin-left: 20px; 
+	width:30%;
+	height: 70%;
+	color: #FBFFFE;
+	border-radius: 5px;
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+	background-color: #BCB9BD;
+	padding-bottom: 60px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#column3
+{
+	float:left;
+	margin-top: 100px;
+	margin-left: 20px; 
+	width:30%;
+	height: 70%;
+	color: #FBFFFE;
+	border-radius: 5px;
+	text-align: center;
+	padding-bottom: 40px;
+	padding-left: 5px;
+	padding-right: 5px;
+	background-color: #BCB9BD;
+	font-family: 'Raleway', sans-serif;
+}
 
 
 .name
@@ -84,6 +139,7 @@ ul, li
 	padding: 18px;
 	display: inline-block;
 }
+
 .about
 {
 	color: #000;
