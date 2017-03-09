@@ -1,4 +1,4 @@
-$(document).ready(function(){
+// $(document).ready(function(){
     "use strict";
 
     var sequenceArray = [];
@@ -14,10 +14,6 @@ $(document).ready(function(){
     var audioOot = new Audio('../audio/NextRound.wav');
 
     var squares = ["topButton", "rightButton", "downButton", "leftButton"]; 
-
-    var randomIndex = getRandomNumberBetween0And();
-    
-    var randomSquare = squares[randomIndex];
 
     //Start by clicking the button and set the array to empty 
     $("#start").click(function(){
@@ -98,6 +94,10 @@ $(document).ready(function(){
 
     // Declaring variables to be used for Simon's Array 
     function simonsArray(input){
+    
+        var randomIndex = getRandomNumberBetween0And();
+        
+        var randomSquare = squares[randomIndex];
         
         sequenceArray.push(randomSquare);
 
@@ -138,4 +138,4 @@ $(document).ready(function(){
         compareMove($(this).attr("id"));
     });
     
-}); 
+// }); 
