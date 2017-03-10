@@ -30,7 +30,7 @@
 	padding-top: 18px;
 }
 
-.portfolio
+.portfolioHead
 {
 	color: #000;
 	font-family: 'Raleway', sans-serif;
@@ -95,9 +95,19 @@ ul, li
 .container2
 {
 	width: 1206px;
-	height: 650px;
+	height: 730px;
 	margin: 0 auto;
 	background-color: #000;
+	border-radius: 5px;
+	outline-style: 2px solid black;
+}
+
+.container3
+{
+	width: 1206px;
+	height: 730px;
+	margin: 0 auto;
+	background-color: #96031A;
 	border-radius: 5px;
 	outline-style: 2px solid black;
 }
@@ -232,6 +242,7 @@ ul, li
 	font-family: 'Raleway', sans-serif;
 }
 
+
 /*Fonts*/
 @font-face 
 {
@@ -240,6 +251,56 @@ ul, li
 
 .raleWay
 {
+	font-family: 'Raleway', sans-serif;
+}
+
+.slideBtn
+{
+	height: 100px;
+	width: 100px;
+	border-radius: 50px;
+	border: 8px solid white opacity: .7;
+	background-color: white;
+	margin-left: 540px;
+	outline: none;
+	position: relative;
+	background-image: url('../img/arrow-down-icon.png');
+
+}
+
+.portfolio
+{
+	width: 900px;
+	height: 50px;
+	margin-top: 15px;
+	margin-left: 516px;
+	position: absolute;
+	font-family: 'Blacksword';
+	display: inline-block;
+}
+
+.portfolioOutline
+{
+	width: 1100px;
+	height: 474px;
+	margin-top: 100px;
+	margin-left: 23px;
+	color: #FBFFFE;
+	position: relative;
+	border: .7px solid black;
+}
+
+#box
+{
+	width: 32%;
+	height: 44%;
+	margin-left: 11px;
+	margin-top: 20px;
+	float:left;
+	border-radius: 5px;
+	text-align: center;
+	background-color: #BCB9BD;
+	color: #FBFFFE;
 	font-family: 'Raleway', sans-serif;
 }
 

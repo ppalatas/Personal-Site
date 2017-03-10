@@ -1,5 +1,6 @@
 // $(document).ready(function(){
-
+	$(".roundedText").lettering();
+	
 	$("#column1").hover(function(){
 		$(".column1Heading").addClass("headerChange");
 	

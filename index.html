@@ -9,13 +9,17 @@
 		<link rel="stylesheet" href="css/index.css">
  	</head>
 	<body>
+
+	<!-- Header/NAV Bar at the top of the page. Shows Name and href'd locations to the page> -->
 	<div id="header">
+
 		<ul>
 			<li class="name">Phillip Palatas</li>
-			<li class="about">About</li>
-			<li class="portfolio">Porfolio</li>
+			<a href="#aboutMe"><li class="about">About</li></a>
+			<li class="portfolioHead">Porfolio</li>
 			<li class="contact">Contact</li>
 		</ul>
+
 	</div>
 
 
@@ -25,13 +29,20 @@
 
 	</article>
 
+	<!-- Background container (Black in color) -->
 	<section class="container2">
 		
+		
+		<a name="aboutMe">
+		<!-- White container that holds about me, webDev, Responsive and Consulting -->
 		<div class="scrollContainer">
+			
+			
+		
 			<div class="aboutMe"><center><h2>About Me</h2></center>
 
 				<center class="raleWay"><b><p>I obtained a diploma in computer programming while logging over 500 hours of coding, focusing on PHP and LAMP stack development, from one of the best computer programming courses in the Nation.  Highly proficient in HTML5, CSS, JavaScript, jQuery, and PHP. I am currently looking for full-time work as a developer.</p><b>
-				</center>
+				</center></a>
 
 			</div>
 
@@ -58,12 +69,31 @@
     			<div id="column3">
     		 	<center><h2 class="column3Heading""><strong>Consulting</strong></h2></center>
 
-				<p>Finding the right design and development team is important; every design firm has their own unique style, business practice, and processes. Making sure you have found a good match is crucial, as planning out a scope of work can be a daunting task.</p>
+					<p>Finding the right design and development team is important; every design firm has their own unique style, business practice, and processes. Making sure you have found a good match is crucial, as planning out a scope of work can be a daunting task.</p>
 
     			</div>
     		</div>
+
+  			<button class="slideBtn"></button>
+
+
+		</section>
+		<section class="container2">
+			<div class="scrollContainer">
+				<div class="portfolio"><h1>Portfolio</h1></div>
+					<div class="portfolioOutline">
+						<div id="box"></div>
+						<div id="box"></div>
+						<div id="box"></div>
+						<div id="box"></div>
+						<div id="box"></div>
+						<div id="box"></div>
+					</div>
+			</div>
+
 		</section>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="js/jquery.lettering.js"></script>
         <script src="js/index.js"></script>
 	</body>
 </html>
