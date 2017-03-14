@@ -3,12 +3,98 @@
 
     <head>
 
-        <title> Weather Map API</title>
+        <title> Weather Map</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
     <style>
+
+       #header
+        {
+            height: 60px;
+            background-color: #0F0F0F;
+            color: white;
+            font-size: 1em;
+            font-family: 'Raleway', sans-serif;
+            margin-top: -5px;
+        }
+
+        #body
+        {
+            width:100%;
+            margin: 0 auto;
+            background-color: white;
+        }
+
+        #weather
+        {
+            background-color: #EDEDED;
+            padding-top: 15px;
+        }
         
+        #map-canvas 
+        {
+            height: 500px;
+            width: 625px;
+            float: right;
+            z-index: 1;
+            margin-top: 15px;
+        }
+
+        #footer
+        {
+            height: 60px;
+            background-color: #dfa938;
+        }
+
+        h1
+        {
+            font-family: 'Raleway', sans-serif;
+        }
+
+        h3
+        {
+            margin: 0;
+        }
+        
+        button 
+        {
+            height: 40px;
+            width: 50px;
+            background-color: red;
+            color: white;
+            float: left;
+            position: absolute;
+            margin-left: 15px;
+            border-radius: 5px;
+        }
+        
+        ul, li 
+        {   
+            height: 60px;
+            width: 200px;
+            list-style: none;
+            margin: 0;
+            padding-top: 15px;
+            text-align: center;
+        }
+
+        .headerWeather
+        {
+            float: left;
+        }
+
+        .headerLat
+        {
+            float: right;
+        }
+
+        .forecast
+        {
+            margin-left: -70px;
+            display: inline-block;
+        }
+
         .latLongSearch
         {
         width: 846px;
@@ -23,91 +109,104 @@
         border-radius: 5px;
         }
         
-        button 
-        {
-            height: 40px;
-            width: 50px;
-            background-color: red;
-            color: white;
-            float: left;
-            position: absolute;
-            margin-left: 15px;
-            border-radius: 5px;
-        }
 
         .inputLeft
         {
-            width: 100px;
-            height: 20px;
-            float: left;
-            border-radius: 5px;
-           
-           
+            width: 150px;
+            height: 12px;
+            float: right; 
         }
 
         .inputRight
         {
-            width: 100px;
-            height: 20px;
-            float: left;
-            border-radius: 5px;
- 
-            
-  
+            float: right;
         }
+
         .container
         {
-           outline-style: 2px solid black;
-           margin: 0 auto;
-           width: 940px;
-           padding: 15px; 
-           background-color: #9ECFE4;
-           margin-bottom: 15px;
+            outline-style: 2px solid black;
+            margin: 0 auto;
+            width: 940px;
+            padding: 15px; 
+            background-color: #9ECFE4;
+            margin-bottom: 15px;
             border-radius: 5px;
+        }
+        .tempContainer
+        {
+            width: 650px;
+            display: inline-block;
+           margin-bottom: 50px;
+            background-color: transparent;
         }
 
         .box
         {
-            height: 250px;
-            height: 250px;
-            width: 250px;
-            background-color: #D9D9D9;
+            height: 225px;
+            width: 200px;
+            background-color: #347bd5;
             display:inline-block;
-            outline: 10px solid white;
+            margin-bottom: 10px;
             text-align: center;
-            margin-left: 5%;
-            color: black;
+            margin-left: 1%;
+            color: white;
+            font-family: 'Raleway', sans-serif;
             border-radius: 5px;
-           
         }
 
-        #map-canvas 
+        .box2
         {
-            height: 400px;
-            width: 93%;
-            margin: 0 auto;
-            margin-top: 15px;
-            position: relative;
+            height: 200px;
+            width: 200px;
+            background-color: #347bd5;
+            display:inline-block;
+            text-align: center;
+            margin-left: 100px;
+            color: white;
+            font-family: 'Raleway', sans-serif;
+            border-radius: 5px;
+            border: 2px solid black;
+        }
+
+        .searchBox
+        {
+            width: 500px;
+            height: 200px;
+            background-color: white;
+            float: left;
 
         }
+        
     </style>
     </head>
-    <body>
-        <main class="container">
-            <h1><center>Weather Map API</center></h1>
-            <div id="weather"></div>
-            <section class="latLongSearch">    
-            <h4><label class= "inputLeft" name= "latitude">Latitude:</label></h4>
-            <input id="latitude" type="text" class="inputLeft" name= "latitude" placeholder ="Latitude Coord"></input>
+    <body id="body">
+        <header id="header">
+     <!--    <main class="container"> -->
+            <ul> 
+                <li class="headerWeather">Your Weather Source</li>
+
+                <li></li>
+
+                <li></li>
+            </ul>
+            </header>
+
+            <h1 class="forecast">Your weekly Forecast</h1><hr>
+
+                <div id="map-canvas"></div>
+            <!-- <div --> 
+            <div id="weather">
     
-            <h4><label type="text" class="inputRight" name= "longitude">Longitude:</label></h4>
-            <input id="longitude" type="text" class="inputRight" name= "longitude" placeholder ="Longitude Coord"></input>
-            <button type="submit" id="buttonOne">Locate</button>
-        </section>
-        <div id="map-canvas"></div>
+                
+            </div>
+           
+            
+        
+            <footer id="footer"></footer>
+
     
 
-            </main>
+           <!--  </main> -->
             <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHkTELMtuCMdk2a6JziHuBf0WdfMmkQes"></script>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
             <script>
@@ -128,7 +227,7 @@
                         // q: "San Antonio",
                         lat: lat,
                         lon: long,
-                        cnt: 3,                 // controls how many days you get back from the forecast 
+                        cnt: 7,                 // controls how many days you get back from the forecast 
                         units: "imperial"
                     
                     })
@@ -144,22 +243,25 @@
 
                         $("#weather").html("");
 
+                        var weather = "<div class='tempContainer'>";
+
                         for (var i = 0; i < data.list.length; i++){
 
-                            var weather = ""; 
-                            weather += "<div class='box'>  <center> <h3>" + "<strong>" + data.city.name + "</strong>" + "</h3>";
+                            weather += " <div class='box'> <center> <h3> " + "<strong>" + data.city.name + "</strong>" + "</h3>";
                             weather += "<img src='http://openweathermap.org/img/w/" + data.list[i].weather[0].icon + ".png'>" + "<br>";
                             weather += "<strong>" + "Temperature: " + "<h4>" + data.list[i].temp.day + "°F" + "</h4>" + "</strong>" + "<br>";
                             weather += "<strong>" + "Humidity: " + "<br>" + data.list[i].humidity + "</strong>" + "</div>";
+                            "<div class='searchBox'></div>"
                          
                         console.log(data);
                        
-                        $("#weather").append(weather);
-
+                        
                     } 
-
+                        weather += "</div>";
+                        $("#weather").append(weather);
                     });
                 }
+
 
                 getWeather(29.4268, -98.4896);
             
@@ -203,12 +305,13 @@
                     })(marker));
 
                     var infowindow = new google.maps.InfoWindow({
-                    content: "Codeup!"
+                    content: "Downtown San Antonio"
                 });
 
                 infowindow.open(map, marker);
 
                 
+                    
 
                 $("#buttonOne").click(function(){
                     var lat = 29.444;

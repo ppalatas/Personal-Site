@@ -1,0 +1,85 @@
+loops 
+
+
+- for repitition 
+-with different data / modifying inside of the loop 
+
+
+
+*while
+	
+	Starts by using a condition. --- tells the loop when to stop or when to continue 
+
+		while(condition){// it might run 0 times
+		}
+			-condition-> When to continue 
+			-boolean expression -> something that return a boolean (true/false)
+				-When to use this loop
+					- if you probably dont want to repeat the code, not even once 
+
+
+
+*do-while
+	do{
+		-the do allows the do-while loop to run at least one time
+	} while (condition){}
+		-When to use this loop
+			- When you want to repeat the code at least once 
+
+
+* for( var i =0 //initialization -- showing where you start counting from//  ; condition; i++ //counts by one. If you want to count by two you would put i +=2  ){
+	//counter ->know in advance how many times the code will be repeated 
+	// because you are counting.... for loops count therefore 
+	// they are generally used for arrays. logging the index and showing each iteration for the loop.
+	
+}
+
+
+
+PARSING -- TAKING SOMETHING APART AND REBUILDING IT AS SOMETHING DIFFERENT 
+
+// THIS DOESNT NEED A TRANSLATION --- XML
+
+{
+	name: "phillip"
+}
+
+
+Anonymous function 
+
+
+a function is a type i.e: string, element etc 
+
+
+everything is a number to a computer... hence the necessity for variable names etc . 
+
+a-synchronous - deetached from time 
+
+var sum = function (a, b) {
+	return a + b;
+}
+
+
+JS Callback is a function that runs at some point in time, but we cant tell when it is going to run 
+
+-http is a set of rules or standards that will translate the human code to the machine 
+
+jQuery $ can be used as a function or as an object 
+
+//messages
+//requests and responses
+//you make the requests with JS and responses with PHP
+var request = $.ajax({'url': 'https://github user url here/users/ppalatas'});
+
+request.done(function(response.login){ //usually a JSON object 
+console.log(response.login);
+console.log(response.url);
+	
+});
+request.fail(function(error){//response error 
+	console.log(error);
+	
+});
+
+
+

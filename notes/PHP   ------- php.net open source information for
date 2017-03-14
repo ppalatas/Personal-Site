@@ -1,0 +1,258 @@
+PHP   ------- php.net open source information for php -------
+
+LOGIN 
+
+VAGRANT SSH 
+
+PHP -A
+
+system (clear);
+
+unset($name); ---- deletes the variable back to empty 
+
+	multiple deletions: 
+	
+		unset ($name,$age);
+_____________________________________________________________
+
+
+
+
+DATA TYPES IN PHP
+
+	Hypertext Preprocessor 
+	
+		-boolean
+		-integer
+		-float ----- (floating-point number, aka double) ---- decimal number 
+		-string --- usually for text ----- only use double quotes on strings
+		-array ---- multiple things 
+		-object
+		-resource --- 
+		-NULL ---- usually when an object is not being defined
+
+
+php files start with 
+
+	<?php 
+
+and has to end with a ?>
+
+
+VARIABLES 
+	
+	Declaring a variable in PHP 
+	js var name = "phillip"; || php	$name = "Phillip";
+
+	creating a new lin $name = "Phillip\n"; --- only for the console (terminal)
+
+	you can do math with variables without having to put actual integers into
+
+
+	Converting to boolean
+
+		php > var_dump((bool) "Hello Codeup");
+		bool(true)
+
+		php > var_dump((bool) 42);
+		bool(true)
+
+		php > var_dump((bool) '');
+		bool(false)
+
+		php > var_dump((bool) -8);
+		bool(true)
+
+		php > var_dump((bool) 'true');
+		bool(true)
+
+		php > var_dump((bool) 1.618);
+		bool(true)
+
+		php > var_dump((bool) "false");
+		bool(true)
+
+		php > var_dump((bool) 0);
+		bool(false)
+
+		
+		php > var_dump((float) "Hello");
+		double(0)
+
+		php > var_dump((int) 3.14);
+		int(3)
+
+		php > var_dump((int) 3.999);
+		int(3)
+
+		php > var_dump((int) 4.95);
+		int(4)
+
+		php > var_dump((float) 4.95);
+		double(4.95)
+
+		php > var_dump(((bool)int) 4.95);
+
+
+		echoing two variables 
+
+		echo "{$firstName}_{$lastName}"
+
+HEREDOC $LIMERICK = <<<POEM
+		insert poem here
+
+		// Example: 
+		php > $limerick = <<<POEM
+		<<< > There was a young man of Japan
+		<<< > Whose limericks never would scan.
+		<<< > When asked why this was,
+		<<< > He replied "It's because
+		<<< > I always try to fit as many syllables into the last line as ever I possibly can.
+		<<< > POEM;
+		php > echo $limerick;
+		There was a young man of Japan
+		Whose limericks never would scan.
+		When asked why this was,
+		He replied "It's because
+		I always try to fit as many syllables into the last line as ever I possibly can.
+
+FUNCTIONS 
+
+	var dump();
+
+		$result = (5 + 1)-1;
+		var_dump($result);   ------ gives you the the var type and the value  -------
+		converts it to a "double"
+
+		- if you do it again it will convert it back to a float (decimal number)
+
+		if result == $result = "Phillip";
+
+		var_dump($result);
+		output: string(7) Phillip
+
+
+		DEFINE
+			define("PLACE_OF_BIRTH", "U.S.") --- always has two paramaters... ALWAYS USE UNDERSCORES on these parameters
+			echo PLACE_OF_BIRTH;
+			U.S.  ------> returns the value (p.o.b)        Assign constants to a variable if they are going to be used a whole lot. 
+
+
+EXAMPLE 
+
+	<?php
+		$firstName = "Phillip";
+		echo $firstName;
+	?>
+
+ARRAYS 
+
+	*Associative - Indices are strings 
+
+	*Numeric. Indices are numbers 
+
+	Multi-Dimensional arrays -> array inside of arrays\
+		$person[0]['name'];
+
+	*We can combine them, but we shouldn't
+	
+	for arrays you can use 	PRINT_R($ARRAY NAME HERE); -- TO PRINT THE ARRAY INDEX'S. 
+	
+
+	
+	always use print_r in mixed arrays 
+	
+	new syntax for an array in php   :      $newSyntax = [];
+	
+											$mixedWithNewSyntax = ['liz', flase, 5, 8.9, []];
+	
+			dont run any php script older than 5.4 
+	
+	
+			ASSOCIATIVE ARRAYS: 
+	
+
+	
+				PHP version of an object in JS 
+	
+					$person = ['name' => 'Ben', 'age' => 20, 'languages'=> ['PHP', 'JS']];
+	
+									key value pairs  ^^
+	
+
+	
+									echo $person['age'];
+	
+	
+				create a log of your key and value pairs inside of the arrays. 
+	
+
+	
+				Do the same for constants.... Constants are always typed in all caps 
+	
+
+	
+	xor -- used in comparison. If both are true then show false. 
+	
+		example:
+	
+			writing code for a store
+	
+				if there is already a sale, you cannot apply a coupon to it. 
+
+	ARITHMETIC OPERATORS 
+
+		If you use any arithmetic operator PHP will covert the operands to numbers either doubles or integers. 
+
+		'Hello' + false // this is going to return to 0.
+
+	ASSIGNMENTS
+
+		*regular assignment $a = 6; 
+
+		*key value pair assignment 'key' => 'value';
+
+		*References $a = &b;
+			*Once I assign by reference, variables change together. 
+
+
+
+
+
+	DO NOT DRAG AND DROP PHP FILES... IT NEEDS A SERVER / COMPUTER IN THE MIDDLE TO TRANSLATE PHP TO HTML/HUMAN TYPE
+	LANGUAGE 
+	
+		echo is just like console.log 
+		
+		you can do math with PHP 
+		
+		echo 'Hello' + 'World'; 
+		will return a value of 0php --> it tries to do math as opposed to recognizing the strings to  be added 
+		
+		-- . is used for concatination .... So the concatination would look like: echo 'Hello' . 'World';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
